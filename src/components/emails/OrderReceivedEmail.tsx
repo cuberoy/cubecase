@@ -23,10 +23,7 @@ const OrderReceivedEmail = ({
   orderId: string
   orderDate: string
 }) => {
-  const baseUrl =
-    process.env.NODE_ENV === 'development'
-      ? 'http://localhost:3000'
-      : 'https://cubecase.vercel.app'
+  const baseUrl ='https://cubecase.vercel.app'
 
   return (
     <Html>
@@ -44,7 +41,7 @@ const OrderReceivedEmail = ({
             />
             <Heading style={global.heading}>Thank you for your order!</Heading>
             <Text style={global.text}>
-              cubecase is completely made up name. No phone case will be shipped.
+              cubecase is completely a made up name. No phone case will be shipped.
               This site is meant to simulate a fully functional application coded from scratch.
             </Text>
             <Text style={{ ...global.text, marginTop: 24 }}>
@@ -66,14 +63,14 @@ const OrderReceivedEmail = ({
           </Section>
           <Hr style={global.hr} />
           <Section style={global.defaultPadding}>
-            <Row style={{ display: 'inline-flex gap-16', marginBottom: 40 }}>
+            <Row style={{ display: 'inline-flex gap-2', marginBottom: 8 }}>
               <Column>
                 <Text style={global.paragraphWithBold}>Order Number</Text>
                 <Text style={track.number}>{orderId}</Text>
               </Column>
             </Row>
             
-            <Row style={{ display: 'inline-flex gap-16', marginBottom: 40 }}>
+            <Row style={{ display: 'inline-flex gap-2', marginBottom: 40 }}>
               <Column>
                 <Text style={global.paragraphWithBold}>Order Date</Text>
                 <Text style={track.number}>{orderDate}</Text>
