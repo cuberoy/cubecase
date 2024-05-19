@@ -16,10 +16,10 @@ const Navbar = async () => {
         <div className='flex h-14 items-center justify-between border-b border-zinc-200'>
           <Link href='/' className='flex z-40 font-semibold text-2xl items-center'>
             <img src='/logo.png' className='h-6' />
-            cube<span className='text-blue-500'>case</span>
+            Cube<span className='text-blue-500'>case</span>
           </Link>
 
-          <div className='absolute text-2xs bottom-0'>**Everything is made up. cubecase is fake.**</div>
+          <div className='absolute text-2xs bottom-0'>**Everything is made up. Cubecase is fake.**</div>
 
           <div className='h-full flex items-center space-x-1'>
             {user ? (

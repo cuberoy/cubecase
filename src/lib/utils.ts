@@ -42,6 +42,6 @@ export function constructMetaData ({
       images: [image]
     },
     icons,
-    metadataBase: new URL("https://cubecase.vercel.app")
+    metadataBase: new URL("https://cubecase.cuberoy.com")
   }
 }

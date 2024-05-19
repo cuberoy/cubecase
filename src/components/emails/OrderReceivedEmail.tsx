@@ -23,7 +23,7 @@ const OrderReceivedEmail = ({
   orderId: string
   orderDate: string
 }) => {
-  const baseUrl ='https://cubecase.vercel.app'
+  const baseUrl ='https://cubecase.cuberoy.com'
 
   return (
     <Html>
@@ -41,7 +41,7 @@ const OrderReceivedEmail = ({
             />
             <Heading style={global.heading}>Thank you for your order!</Heading>
             <Text style={global.text}>
-              cubecase is completely a made up name. No phone case will be shipped.
+              Cubecase is a made up brand. No phone case will be shipped.
               This site is meant to simulate a fully functional application coded from scratch.
             </Text>
             <Text style={{ ...global.text, marginTop: 24 }}>
@@ -63,15 +63,15 @@ const OrderReceivedEmail = ({
           </Section>
           <Hr style={global.hr} />
           <Section style={global.defaultPadding}>
-            <Row style={{ display: 'inline-flex gap-2', marginBottom: 8 }}>
-              <Column>
+            <Row style={{ display: 'inline-flex', marginBottom: 20 }}>
+              <Column style={{ paddingBottom: 5}}>
                 <Text style={global.paragraphWithBold}>Order Number</Text>
                 <Text style={track.number}>{orderId}</Text>
               </Column>
             </Row>
             
-            <Row style={{ display: 'inline-flex gap-2', marginBottom: 40 }}>
-              <Column>
+            <Row style={{ display: 'inline-flex', marginBottom: 40 }}>
+              <Column style={{ paddingBottom: 5}}>
                 <Text style={global.paragraphWithBold}>Order Date</Text>
                 <Text style={track.number}>{orderDate}</Text>
               </Column>
@@ -94,7 +94,7 @@ const OrderReceivedEmail = ({
             </Row>
             <Row>
               <Text style={footer.text}>
-                &copy; cubecase, Inc. All Rights Reserved.
+                &copy; Cubecase, Inc. All Rights Reserved.
               </Text>
             </Row>
           </Section>

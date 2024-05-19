@@ -10,10 +10,10 @@ const Footer = () => {
         <div className='h-full flex flex-col md:flex-row md:justify-between justify-center items-center'>
           <div className='text-center md:text-left pb-2 md:pb-0'>
             <p className='text-sm text-muted-foreground'>
-              &copy; {new Date().getFullYear()} cubecase, Inc. All rights reserved
+              &copy; {new Date().getFullYear()} Cubecase, Inc. All rights reserved
             </p>
           </div>
-          <div className='absolute text-2xs top-0'>**Everything is made up. cubecase is fake.**</div>
+          <div className='absolute text-2xs top-0'>**Everything is made up. Cubecase is fake.**</div>
 
           <div className='flex items-center justify-center'>
             <div className='flex space-x-8'>
