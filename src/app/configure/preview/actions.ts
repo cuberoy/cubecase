@@ -62,7 +62,7 @@ export const createCheckoutSession = async ({
       currency: 'SGD',
       unit_amount: price,
     },
-    description: 'IMPORTANT: This is a mock up site. Payment is fake and you won\'t be charged. You can enter your own email to receive receipt. Enter a random address e.g abc, 123456. If you select payment by card, you can randomly enter any valid card number e.g 4242 4242 4242 4242. This information is not stored. If you use paynow, you will be redirected to simulate a QR scan. Just authorize the payment.',
+    description: 'This is a mock up site. Payment is fake and you won\'t be charged. Test card number: 4242 4242 4242 4242. If you use paynow, you will be redirected to simulate a QR scan. Just authorize the payment.',
     images: [configuration.croppedImageUrl!]
   })
 

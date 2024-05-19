@@ -33,8 +33,8 @@ const Page = () => {
     setIsDragOver(false)
 
     toast({
-      title: `${file.file.type} type is not supported.`,
-      description: "Please choose a PNG, JPG, or JPEG image instead. Only 1 file can be selected",
+      title: `File is not supported.`,
+      description: "Please choose a PNG, JPG, or JPEG image. Only 1 file can be selected.",
       variant: "destructive"
     })
   }
