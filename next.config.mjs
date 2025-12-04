@@ -1,8 +1,12 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-    images: {
-        domains: ['utfs.io'],
-    },
-};
-
-export default nextConfig;
+export default {
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "vynxiq6fdm.ufs.sh",
+        pathname: "/f/*",
+      },
+    ],
+  },
+}
