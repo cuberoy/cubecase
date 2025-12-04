@@ -12,16 +12,6 @@ First generate prisma
 npx prisma generate
 ```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
 Then, run the development server:
 
 ```bash
