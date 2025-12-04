@@ -14,13 +14,14 @@ import { createCheckoutSession } from './actions'
 import { useRouter } from 'next/navigation'
 import { useToast } from '@/components/ui/use-toast'
 import { useKindeBrowserClient } from '@kinde-oss/kinde-auth-nextjs'
+import { getKindeServerSession } from '@kinde-oss/kinde-auth-nextjs/server';
 import LoginModal from '@/components/LoginModal'
 
 const DesignPreview = ({ configuration }: { configuration: Configuration }) => {
   const router = useRouter()
   const { toast } = useToast()
   const { id } = configuration
-  const { user } = useKindeBrowserClient()
+  const { getUser } = getKindeServerSession()
   const [isLoginModalOpen, setIsLoginModalOpen] = useState<boolean>(false)
 
   const [showConfetti, setShowConfetti] = useState<boolean>(false)
@@ -55,8 +56,9 @@ const DesignPreview = ({ configuration }: { configuration: Configuration }) => {
     },
   })
 
-  const handleCheckout = () => {
-    if (user) {
+  const handleCheckout = async () => {
+
+    if (await getUser()) {
       // create payment session
       createPaymentSession({ configId: id })
     } else {
